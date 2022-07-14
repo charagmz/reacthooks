@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { UserContex } from "./UserContext"
+import { UserContext } from "./UserContext"
 
 // const user = {
 //     id: 123,
@@ -14,8 +14,8 @@ export const UserProvider = ({children}) => {
 
     return (
         // <UserContex.Provider value={{ hola: 'mundo', user }}>
-        <UserContex.Provider value={{ user, setUser }}>
+        <UserContext.Provider value={{ user, setUser }}>
             { children }
-        </UserContex.Provider>
+        </UserContext.Provider>
     )
 }

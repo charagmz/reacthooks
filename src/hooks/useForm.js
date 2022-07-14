@@ -9,7 +9,7 @@ export const useForm = (initialForm = {}) => {
         const {name, value} = target;
         setFormState({
             ...formState,
-            [name]: value,//propiedades computaas de los objetos
+            [name]: value,//propiedades computadas de los objetos
             //name: value,//si se coloca asi va a crear un nuevo prop con el nombre name
         });
     }

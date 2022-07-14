@@ -1,16 +1,16 @@
 import { useContext } from "react"
-import { UserContex } from "./context/UserContext";
+import { UserContext } from "./context/UserContext";
 
 export const LoginPage = () => {
 
-    const { user, setUser} = useContext(UserContex);
+    const { user, setUser} = useContext(UserContext);
     // console.log(hola, user);
     return (
         <>
             <h1>LoginPage</h1>
             <hr />
 
-            <pre>
+            <pre aria-label="pre">
                 { JSON.stringify(user, null, 3)}
             </pre>
 
